@@ -1,1 +1,8 @@
-index.html.erb
+<h1>Hello</h1>
+<% @classes.each do |yoga_class| %>
+  <%= yoga_class.name %>
+  <%= yoga_class.description %>
+  <%= yoga_class.price %>
+  <%= yoga_class.date %>
+  <%= link_to "Read More", yoga_class_path(yoga_class) %>
+<% end %>

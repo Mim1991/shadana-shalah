@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'blog', to: 'pages#blog'
 
-  resources :yoga_class do
+  resources :yoga_classes do
     resources :bookings, only: [:new, :create, :edit, :update, :destroy]
   end
 

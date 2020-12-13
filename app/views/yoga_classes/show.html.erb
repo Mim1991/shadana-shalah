@@ -1,0 +1,7 @@
+<%= @yoga_class.name %>
+<% spaces = @yoga_class.capacity - @yoga_class.bookings.count %>
+<%= spaces %>
+
+<% if spaces > 0 %>
+  <%= render "bookings/form", yoga_class: @yoga_class, booking: @booking %>
+<% end %>
