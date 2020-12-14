@@ -1,11 +1,11 @@
-  <%= link_to "About", about_path %>
-  <%= link_to "Blog", blog_path %>
-  <%= link_to "Classes", yoga_classes_path %>
+  <%= link_to "ABOUT", about_path %>
+  <%= link_to "BLOG", blog_path %>
+  <%= link_to "CLASSES", yoga_classes_path %>
 <% if user_signed_in? %>
-  <%= link_to "Your Account", profile_path %>
+  <%= link_to "YOUR ACCOUNT", profile_path %>
 <% else %>
-  <%= link_to "Log In", new_user_session_path %>
-  <%= link_to "Sign Up", new_user_registration_path %>
+  <%= link_to "LOG IN", new_user_session_path %>
+  <%= link_to "SIGN UP", new_user_registration_path %>
 <% end %>
   <%= link_to "Inst", "#" %>
   <%= link_to "Facebook", "#" %>
