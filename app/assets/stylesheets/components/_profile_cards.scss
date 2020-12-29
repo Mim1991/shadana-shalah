@@ -1,7 +1,7 @@
 .card-container{
   display: flex;
-  width: 90%;
-  border: 1px solid red;
+  width: 95%;
+  // border: 1px solid red;
   height: 150vh;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .left-container{
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -19,20 +19,24 @@
 }
 
 .tl-stack{
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 98%;
   height: 43%;
   margin-bottom: 2%;
+  background: linear-gradient(rgba(54, 54, 54, 0.5), rgba(54, 54, 54, 0.5)), url(https://res.cloudinary.com/dczzzghtt/image/upload/v1607979235/nahil-naseer-xljtGZ2-P3Y-unsplash_puqy9g.jpg);
+  background-size: cover;
 }
 
 .bl-stack{
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 98%;
   height: 55%;
+  background: linear-gradient(rgba(54, 54, 54, 0.5), rgba(54, 54, 54, 0.5)), url(https://res.cloudinary.com/dczzzghtt/image/upload/v1607981590/ren-ran-bBiuSdck8tU-unsplash_ztfilk.jpg);
+  background-size: cover;
 }
 
 .right-container{
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -41,14 +45,41 @@
 }
 
 .tr-stack{
-  border: 1px solid red;
+  // border: 1px solid red;
   height: 35%;
   width: 99%;
   margin-bottom: 1%;
+  background: linear-gradient(rgba(54, 54, 54, 0.5), rgba(54, 54, 54, 0.5)), url(https://res.cloudinary.com/dczzzghtt/image/upload/v1607981429/geran-de-klerk-qzgN45hseN0-unsplash_nocphx.jpg);
+  background-size: cover;
 }
 
 .br-stack{
-  border: 1px solid red;
+  // border: 1px solid red;
   height: 63%;
   width: 99%;
+  display: flex;
 }
+
+.brl-stack{
+  // border: 1px solid red;
+  height: 100%;
+  width: 49%;
+  margin-right: 1%;
+  background: linear-gradient(rgba(54, 54, 54, 0.5), rgba(54, 54, 54, 0.5)), url(https://res.cloudinary.com/dczzzghtt/image/upload/v1607981500/annie-spratt-wMqPJs2x0-A-unsplash_k4gsy0.jpg);
+  background-size: cover;
+}
+
+.profile-section{
+  // border: 1px solid red;
+  height: 100%;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
