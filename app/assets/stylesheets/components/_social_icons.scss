@@ -1,0 +1,98 @@
+ul {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  right: -149px;
+  bottom: 240px;
+}
+
+.social-icons {
+  height: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+.fab {
+  top: 8px;
+}
+
+ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 16px;
+  font-size: 16px;
+  margin: 8px 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+ul li a .icon {
+  position: relative;
+  color: $air-blue;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+ul li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+ul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+.facebook-position {
+  left: -48px;
+  top: -9px;
+}
+
+.google-position {
+  left: -48px;
+  top: 25px;
+}
+
+.twitter-position {
+  left: -16px;
+}
+
+.linkedin-position {
+  top: 21px;
+  left: -16px;
+}
