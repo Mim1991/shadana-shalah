@@ -1,0 +1,41 @@
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.test-top-row {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+}
+
+.test-tl {
+  width: 50%;
+  height: 100%;
+  background-color: $yellow;
+}
+
+.test-tr {
+  width: 50%;
+  height: 100%;
+  background-color: $teal;
+}
+
+.test-btm-row {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+}
+
+.test-bl {
+  width: 50%;
+  height: 100%;
+  background-color: $teal;
+}
+
+.test-br {
+  width: 50%;
+  height: 100%;
+  background-color: $yellow;
+}
