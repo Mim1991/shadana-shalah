@@ -23,7 +23,9 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { initProfilePic } from "../pages/home";
+import { initSocialIcons } from "../components/footer";
 
 document.addEventListener("turbolinks:load", () => {
   initProfilePic();
+  initSocialIcons();
 });

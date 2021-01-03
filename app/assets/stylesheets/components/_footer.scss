@@ -63,3 +63,137 @@
     background-position: 0;
   }
 }
+.footer-title {
+  width: 100vw;
+  padding-top: 3%;
+}
+
+.footer-container {
+  width: 100vw;
+  background-color: $teal;
+  height: 62vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+  margin-top: 4%;
+}
+
+.border-test {
+  width: 30%;
+  height: 100%;
+}
+
+.contact-address {
+  h3 {
+    font-family: $title-font;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.12em;
+    color: white;
+  }
+  p {
+    font-family: $title-font;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    color: white;
+    margin: 0;
+  }
+}
+
+.contact-info {
+  margin-top: 3%;
+  p {
+    font-family: $title-font;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    color: white;
+    margin: 0;
+  }
+}
+
+.footer-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    font-family: $title-font;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.12em;
+    color: white;
+    margin-bottom: 8%;
+  }
+}
+
+// Social Icons on Footer
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+}
+
+/* Top Square */
+.rectangle2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 75%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  bottom: 75%;
+  left: 1px;
+  z-index: 1;
+}
+
+/* Bottom Square */
+.rectangle1 {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  background: #ff4e84;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  top: 12.5%;
+  left: 12.5%;
+  z-index: 0;
+}
+
+.rectangle2:hover {
+  position: relative;
+  bottom: 67.5%;
+  left: 6%;
+  transition: 0.2s ease-in-out;
+}
+
+.heavy-shadow {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.logo-size {
+  font-size: 24px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  h3 {
+    font-family: $title-font;
+    font-style: italic;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    color: white;
+  }
+}
