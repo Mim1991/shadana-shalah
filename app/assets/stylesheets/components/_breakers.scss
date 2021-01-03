@@ -39,3 +39,9 @@
     letter-spacing: 0.05em;
   }
 }
+
+.triangle-position {
+  position: relative;
+  top: -3px;
+  z-index: 5;
+}
