@@ -22,6 +22,9 @@
   width: 50%;
   height: 100%;
   background-color: $teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .test-btm-row {
@@ -34,6 +37,9 @@
   width: 50%;
   height: 100%;
   background-color: $teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .test-br {
@@ -54,4 +60,16 @@
 .test-br-image {
   margin-right: -15%;
   margin-top: 7%;
+}
+
+.test-tr-text {
+  width: 90%;
+  text-align: center;
+  p {
+    font-family: $title-font;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.12rem;
+  }
 }
