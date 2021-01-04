@@ -7,7 +7,7 @@
 }
 
 .test-top-row {
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
 }
@@ -25,7 +25,7 @@
 }
 
 .test-btm-row {
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
 }
@@ -40,4 +40,13 @@
   width: 50%;
   height: 100%;
   background-color: $yellow;
+}
+
+.blob-position {
+  position: absolute;
+  margin-top: 197px;
+  margin-left: -34px;
+}
+.test-tl-image {
+  margin-left: -25%;
 }

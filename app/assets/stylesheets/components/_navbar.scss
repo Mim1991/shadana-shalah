@@ -1,8 +1,14 @@
 .navbar-positioning {
   display: flex;
   justify-content: space-between;
-  width: 50vw;
+  width: 100vw;
+  padding: 1% 20%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   margin: auto;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background: white;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -13,11 +19,10 @@
   width: 40px;
 }
 
-.navbar-items a{
+.navbar-items a {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   letter-spacing: 0.12em;
   color: $pink;
 }
-

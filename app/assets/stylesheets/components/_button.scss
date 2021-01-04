@@ -7,11 +7,21 @@
   align-items: center;
   border: 2px solid $teal;
   border-radius: 4px;
+  transition: all 0.5s;
   a {
     text-decoration: none;
     color: $teal;
     font-size: 14px;
     font-family: $title-font;
     font-weight: 700;
+  }
+}
+
+.btn-home:hover {
+  background-color: $pink;
+  border: 2px solid $pink;
+  width: 175px;
+  a {
+    color: white;
   }
 }
