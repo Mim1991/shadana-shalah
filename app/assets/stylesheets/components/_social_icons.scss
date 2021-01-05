@@ -37,7 +37,7 @@ ul li a {
 ul li a .icon {
   position: relative;
   color: $air-blue;
-  transition: 1s;
+  transition: 0.5s;
   z-index: 3;
 }
 
@@ -54,7 +54,7 @@ ul li a:before {
   width: 100%;
   height: 100%;
   background: #f00;
-  transition: 1s;
+  transition: 0.5s;
   z-index: 2;
 }
 

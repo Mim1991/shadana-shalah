@@ -1,11 +1,11 @@
-const initProfilePic = () => {
-  const profilePhoto = document.querySelector(".avatar-photo");
+// const initProfilePic = () => {
+//   const profilePhoto = document.querySelector(".avatar-photo");
 
-  function socialPopups() {
-    console.log(profilePhoto);
-  }
+//   function socialPopups() {
+//     console.log(profilePhoto);
+//   }
 
-  profilePhoto.addEventListener(`mouseover`, socialPopups);
-};
+//   profilePhoto.addEventListener(`mouseover`, socialPopups);
+// };
 
-export { initProfilePic };
+// export { initProfilePic };

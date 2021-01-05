@@ -7,7 +7,7 @@
 }
 
 .test-top-row {
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
 }
@@ -22,10 +22,13 @@
   width: 50%;
   height: 100%;
   background-color: $teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .test-btm-row {
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
 }
@@ -34,10 +37,39 @@
   width: 50%;
   height: 100%;
   background-color: $teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .test-br {
   width: 50%;
   height: 100%;
   background-color: $yellow;
+}
+
+.blob-position {
+  position: absolute;
+  margin-top: 197px;
+  margin-left: -34px;
+}
+.test-tl-image {
+  margin-left: -10%;
+}
+
+.test-br-image {
+  margin-right: -15%;
+  margin-top: 7%;
+}
+
+.test-tr-text {
+  width: 90%;
+  text-align: center;
+  p {
+    font-family: $title-font;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.12rem;
+  }
 }
