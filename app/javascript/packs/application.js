@@ -22,10 +22,11 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
-import { initProfilePic } from "../pages/home";
 import { initSocialIcons } from "../components/footer";
+import { initNavbar } from "../components/navbar";
 
 document.addEventListener("turbolinks:load", () => {
-  initProfilePic();
+  // initProfilePic();
   initSocialIcons();
+  initNavbar();
 });

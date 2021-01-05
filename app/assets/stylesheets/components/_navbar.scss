@@ -3,12 +3,13 @@
   justify-content: space-between;
   width: 100vw;
   padding: 1% 20%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+
   margin: auto;
   position: sticky;
   top: 0px;
   z-index: 100;
   background: white;
+  transition: all 0.3s linear;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -25,4 +26,47 @@
   line-height: 26px;
   letter-spacing: 0.12em;
   color: $pink;
+}
+
+.navbar-shadow {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  justify-content: flex-end;
+  padding: 10px;
+  transition: all 0.2s linear;
+  a {
+    font-size: 12px;
+    margin-right: 15px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar-alternate {
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100vw;
+  padding: 10px;
+  margin: auto;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background: white;
+  a {
+    font-size: 12px;
+    margin-right: 15px;
+  }
+}
+
+.navbar-color {
+  background-color: $teal;
+  a {
+    color: white;
+  }
+}
+
+.navbar-pad {
+  padding-bottom: 4%;
 }
