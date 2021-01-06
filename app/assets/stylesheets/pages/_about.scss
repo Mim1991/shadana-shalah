@@ -1,0 +1,99 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-heading {
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-family: $title-font;
+    font-weight: bold;
+    font-size: 44px;
+    letter-spacing: 0.45em;
+    color: $teal;
+    margin-top: 11%;
+  }
+}
+
+.about-me-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.about-img-large {
+  height: 150vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  height: 100vh;
+  width: 50vw;
+}
+
+.about-image {
+  width: 80%;
+}
+
+.about-text {
+  padding-right: 17%;
+  p {
+    font-family: $body-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: $para-light;
+  }
+}
+
+.jiva-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $teal;
+  height: 100vh;
+  padding: 3% 11% 5% 11%;
+}
+
+.jiva-desc {
+  width: 50%;
+  h2 {
+    font-family: $title-font;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 57px;
+    color: white;
+    letter-spacing: 0.5rem;
+    margin-bottom: 3vh;
+  }
+  p {
+    font-family: $body-font;
+    color: white;
+    font-size: 1.3rem;
+  }
+}
+
+.jiva-image {
+  width: 50%;
+}
+
+.iyengar-container {
+  background-color: $body-white;
+  padding-bottom: 0;
+  margin-bottom: -75px;
+}
+
+.iyengar-desc {
+  padding-right: 9%;
+  h2 {
+    color: $teal;
+  }
+  p {
+    color: $teal;
+  }
+}
