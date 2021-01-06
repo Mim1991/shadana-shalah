@@ -1,7 +1,7 @@
 .page-breaker {
   width: 100vw;
   height: 0px;
-  border: 13px solid #faab85;
+  border: 13px solid $pink;
 }
 
 .breaker-heading {
@@ -53,4 +53,8 @@
 
 .breaker-margin-large {
   margin-top: 5vh;
+}
+
+.breaker-mt-large {
+  margin-top: 10vh;
 }
