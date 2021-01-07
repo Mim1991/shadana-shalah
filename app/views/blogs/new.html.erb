@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Post to your blog</h1>
+  <%= simple_form_for(@blog) do |f| %>
+      <%= f.input :title %>
+      <%= f.input :content %>
+      <%= f.input :category %>
+      <%= f.submit class:"btn btn-primary" %>
+  <% end %>
+</div>
