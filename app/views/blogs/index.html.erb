@@ -1,3 +1,4 @@
+<%= render "shared/heading" %>
 <h1>Blog Index</h1>
 <% @blogs.each do |blog| %>
   <%= link_to blog.title, blog_path(blog)  %>

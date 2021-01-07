@@ -30,3 +30,6 @@ document.addEventListener("turbolinks:load", () => {
   initSocialIcons();
   initNavbar();
 });
+
+require("trix")
+require("@rails/actiontext")
