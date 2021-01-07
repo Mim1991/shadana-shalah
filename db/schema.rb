@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 2021_01_07_205914) do
     t.index ["yoga_class_id"], name: "index_bookings_on_yoga_class_id"
   end
 
+  
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
