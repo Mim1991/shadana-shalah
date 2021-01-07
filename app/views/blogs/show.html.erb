@@ -1,3 +1,7 @@
-<h1><%= @blog.title %></h1>
-<p><%= @blog.content %></p>
-<%= link_to "All Blogs", blogs_path %>
+<div class="container">
+  <h1><%= @blog.title %></h1>
+  <p><%= @blog.content %></p>
+  <%= link_to "All Blogs", blogs_path %>
+  <%= link_to "Edit Blog Post", edit_blog_path(@blog) %>
+  <%= link_to "Delete", blog_path(@blog), method: :delete, data: {confirm: "Are you sure?"}  %>
+</div>
