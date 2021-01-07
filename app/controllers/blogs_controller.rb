@@ -19,7 +19,10 @@ class BlogsController < ApplicationController
     else
       render :new
     end
+  end
 
+  def edit
+    @blog = Blog.find(params[:id])
   end
 
   private
