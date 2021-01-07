@@ -1,7 +1,7 @@
 <%= simple_form_for(blog) do |f| %>
     <%= f.input :title %>
-    <%= f.input :content %>
+    <%= f.rich_text_area :rich_body %>
     <%= f.input :category %>
     <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-    <%= f.submit class:"btn btn-primary" %>
+    <%= f.button :submit, class:"btn btn-primary" %>
 <% end %>

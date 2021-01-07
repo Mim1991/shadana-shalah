@@ -1,7 +1,10 @@
 <%= render "shared/heading" %>
 <div class="container">
   <h1><%= @blog.title %></h1>
-  <p><%= @blog.content %></p>
+  <p><%= @blog.rich_body %></p>
+  <% @blog.photos.each do |photo| %>
+    <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+  <% end %>
   <%= link_to "All Blogs", blogs_path %>
   <%= link_to "Edit Blog Post", edit_blog_path(@blog) %>
   <%= link_to "Delete", blog_path(@blog), method: :delete, data: {confirm: "Are you sure?"}  %>
