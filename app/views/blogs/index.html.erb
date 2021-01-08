@@ -1,4 +1,4 @@
-require 'date'
+
 
 <div class="display-flex-box">
   <%= render "shared/heading" %>
@@ -15,14 +15,16 @@ require 'date'
         <% end %>
 
         <div class="blog-card">
-          <div class="card" style="background-image: url('<%= background_url %>'); height: 430px; background-size: cover; background-repeat: no-repeat; background-position:center;">
-          </div>
+          <%= link_to blog_path(blog) do  %>
+            <div class="card" style="background-image: url('<%= background_url %>'); height: 430px; background-size: cover; background-repeat: no-repeat; background-position:center;">
+            </div>
+          <% end %> 
           <div class="blog-headline">
-            <h2><%= link_to blog.title, blog_path(blog)%></h2>
+            <%= link_to blog.title.upcase, blog_path(blog), class:"blog-title-link"%>
             <% if blog.published_date %>
-              <%= blog.published_date.strftime("%b %d, %Y") %>
+              <p><%= blog.published_date.strftime("%b %d, %Y") %></p>
             <% else %>
-              <%= blog.created_at.strftime("%b %d, %Y") %>
+              <p><%= blog.created_at.strftime("%b %d, %Y") %></p>
             <% end %>
           </div>
         </div>
@@ -30,6 +32,7 @@ require 'date'
       </div>
     <% end %>
   </div>
-
-<%= link_to "Create a Post", new_blog_path %>
+<% if current_user && current_user.admin %>
+  <%= link_to "Create a Post", new_blog_path %>
+<% end %>
 </div>
