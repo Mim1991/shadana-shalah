@@ -4,7 +4,7 @@
 
   <div class="container blog-mt">
   <div class="row">
-    <% @blogs.each do |blog| %>
+    <% @blogs.reverse.each do |blog| %>
       <div class="col-12 col-md-6 col-lg-4 blog-card-margin">
         <% if blog.photos.attached? %>
             <% background_url = cl_image_path blog.photos.first.key, height: 300, width: 400, crop: :fill %>
@@ -15,7 +15,10 @@
         <div class="blog-card">
           <div class="card" style="background-image: url('<%= background_url %>'); height: 430px; background-size: cover">
           </div>
-          <%= link_to blog.title, blog_path(blog)%>
+          <div class="blog-headline">
+            <h2><%= link_to blog.title, blog_path(blog)%></h2>
+            <p><%= blog.created %></p>
+          </div>
         </div>
 
       </div>
