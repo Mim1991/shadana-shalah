@@ -22,9 +22,9 @@
           <div class="blog-headline">
             <%= link_to blog.title.upcase, blog_path(blog), class:"blog-title-link"%>
             <% if blog.published_date %>
-              <p><%= blog.published_date.strftime("%b %d, %Y") %></p>
+              <p><%= blog.published_date.strftime("%b %d, %Y").to_str.upcase %></p>
             <% else %>
-              <p><%= blog.created_at.strftime("%b %d, %Y") %></p>
+              <p><%= blog.created_at.strftime("%b %d, %Y").to_str.upcase %></p>
             <% end %>
           </div>
         </div>
