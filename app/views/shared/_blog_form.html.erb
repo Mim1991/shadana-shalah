@@ -2,6 +2,7 @@
     <%= f.input :title %>
     <%= f.rich_text_area :rich_body %>
     <%= f.input :category %>
+    <%= f.input :published_date %>
     <%= f.input :photos, as: :file, input_html: { multiple: true } %>
     <%= f.button :submit, class:"btn btn-primary" %>
 <% end %>
