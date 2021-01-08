@@ -1,8 +1,26 @@
-<%= render "shared/heading" %>
-<h1>Blog Index</h1>
-<% @blogs.each do |blog| %>
-  <%= link_to blog.title, blog_path(blog)  %>
-  <p><%= blog.content %></p> 
-<% end %>
+<div class="display-flex-box">
+  <%= render "shared/heading" %>
+
+
+  <div class="container">
+  <div class="row">
+    <% @blogs.each do |blog| %>
+      <div class="col-12 col-md-6 col-lg-4">
+        <% if blog.photos.attached? %>
+            <% background_url = cl_image_path blog.photos.first.key, height: 300, width: 400, crop: :fill %>
+        <% else %>
+          <% background_url = 'https://source.unsplash.com/500x400/?cocktail' %>
+        <% end %>
+
+        <div class="blog-card">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= background_url %>'); height: 280px">
+          </div>
+          <%= link_to blog.title, blog_path(blog)%>
+        </div>
+                
+      </div>
+    <% end %>
+  </div>
 
 <%= link_to "Create a Post", new_blog_path %>
+</div>
