@@ -226,7 +226,7 @@
           <% if @blogs[2].photos.attached? %>
             <%= cl_image_tag(@blogs[2].photos.first.key, class:"blog-photo") %>
           <% else %>
-            <% background_url = 'https://source.unsplash.com/500x400/?cocktail' %>
+            <%= cl_image_tag("priya-blog-default.jpg", class:"blog-photo") %>
           <% end %>
           <div class="blog-prof-info">
             <h3><%= @blogs[2].title.upcase %></h3>
