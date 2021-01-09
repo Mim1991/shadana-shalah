@@ -13,9 +13,12 @@
   <div class="blog-body">
     <p><%= @blog.rich_body %></p>
   </div>
+
   <div class="blog-action-links">
     <%= link_to "All Blogs", blogs_path %>
-    <%= link_to "Edit Blog Post", edit_blog_path(@blog) %>
-    <%= link_to "Delete", blog_path(@blog), method: :delete, data: {confirm: "Are you sure?"}  %>
+    <% if current_user && current_user.admin %>
+      <%= link_to "Edit Blog Post", edit_blog_path(@blog) %>
+      <%= link_to "Delete", blog_path(@blog), method: :delete, data: {confirm: "Are you sure?"}  %>
+    <% end %>
   </div>
 </div>
