@@ -8,14 +8,14 @@ const initNavbar = () => {
   function navbarShadow() {
     if (window.pageYOffset >= navbarOffset) {
       navbarEl.classList.add("navbar-shadow");
-      instanavEl.classList.add("hidden");
-      fbnavEl.classList.add("hidden");
+      // instanavEl.classList.add("hidden");
+      // fbnavEl.classList.add("hidden");
       // removeElement("insta-navbar");
       // removeElement("fb-navbar");
     } else {
       navbarEl.classList.remove("navbar-shadow");
-      instanavEl.classList.remove("hidden");
-      fbnavEl.classList.remove("hidden");
+      // instanavEl.classList.remove("hidden");
+      // fbnavEl.classList.remove("hidden");
     }
   }
 
