@@ -1,11 +1,11 @@
 <%= render "shared/heading" %>
-<div class="container blog-show-container">
+<div class="container blog-show-container " id="blog-<%= @blog.id %>">
   <% if @blog.published_date %>
     <p><%= @blog.published_date.strftime("%b %d, %Y").to_str.upcase %></p>
   <% else %>
     <p><%= @blog.created_at.strftime("%b %d, %Y").to_str.upcase %></p>
   <% end %>
-  <div class="blog-header">
+  <div class="blog-header"> 
     <h1><%= @blog.title.upcase %></h1>
   </div>
   <h4><%= @blog.category.upcase %></h4>

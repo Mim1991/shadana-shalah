@@ -60,10 +60,17 @@
   font-weight: bold;
 }
 
-.blog-prof-one a {
-  text-align: center;
-  text-decoration: none;
-  &:hover {
-    color: $teal;
+.blog-prof-one,
+.blog-prof-two,
+.blog-prof-three {
+  h3 {
+    margin-top: 30px;
+  }
+  a {
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      color: $teal;
+    }
   }
 }

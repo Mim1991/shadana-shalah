@@ -222,7 +222,7 @@
     <div class="blog-prof-hlt">
       
       <div class="blog-prof-one">
-        <%= link_to blog_path(@blogs[2]) do %>
+        <%= link_to blog_path(@blogs[2], anchor:"blog-#{@blogs[2].id}") do %>
           <% if @blogs[2].photos.attached? %>
             <%= cl_image_tag(@blogs[2].photos.first.key, class:"blog-photo") %>
           <% else %>
@@ -233,25 +233,39 @@
         <% end %>
             <p class="blog-para-formatting">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias inventore minima quisquam repellendus ipsa quo quae quasi reprehenderit eveniet voluptate eos rerum optio culpa, voluptatibus nobis cupiditate laboriosam cum consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quam laboriosam! Quae, dolor. Architecto nostrum iure odit laborum culpa ipsum modi nemo vitae dolores ipsa veritatis magni, est beatae cum!</p>
 
-          <%= link_to "READ MORE >", blog_path(@blogs[2]) , class:"read-formatting" %>
+          <%= link_to "READ MORE >", blog_path(@blogs[2], anchor:"blog-#{@blogs[2].id}") , class:"read-formatting" %>
         </div>
       </div>
       
       <div class="blog-prof-two">
-        <%= cl_image_tag("https://res.cloudinary.com/dczzzghtt/image/upload/v1609682223/healthyfood.jpg", class:"blog-photo") %>
-        <div class="blog-prof-info">
-          <h3><%= @blogs[1].title.upcase %></h3>
-          <p class="blog-para-formatting">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias inventore minima quisquam repellendus ipsa quo quae quasi reprehenderit eveniet voluptate eos rerum optio culpa, voluptatibus nobis cupiditate laboriosam cum consequuntur.</p>
-          <p class="read-formatting">READ MORE ></p>
+        <%= link_to blog_path(@blogs[1], anchor:"blog-#{@blogs[1].id}") do %>
+          <% if @blogs[2].photos.attached? %>
+            <%= cl_image_tag(@blogs[1].photos.first.key, class:"blog-photo") %>
+          <% else %>
+            <%= cl_image_tag("priya-blog-default.jpg", class:"blog-photo") %>
+          <% end %>
+          <div class="blog-prof-info">
+            <h3><%= @blogs[1].title.upcase %></h3>
+        <% end %>
+            <p class="blog-para-formatting">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias inventore minima quisquam repellendus ipsa quo quae quasi reprehenderit eveniet voluptate eos rerum optio culpa, voluptatibus nobis cupiditate laboriosam cum consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quam laboriosam! Quae, dolor. Architecto nostrum iure odit laborum culpa ipsum modi nemo vitae dolores ipsa veritatis magni, est beatae cum!</p>
+
+          <%= link_to "READ MORE >", blog_path(@blogs[1], anchor:"blog-#{@blogs[1].id}") , class:"read-formatting" %>
         </div>
       </div>
 
       <div class="blog-prof-three">
-        <%= cl_image_tag("https://res.cloudinary.com/dczzzghtt/image/upload/v1609682223/healthyfood.jpg", class:"blog-photo") %>
-        <div class="blog-prof-info">
-          <h3><%= @blogs[0].title.upcase %></h3>
-          <p class="blog-para-formatting">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias inventore minima quisquam repellendus ipsa quo quae quasi reprehenderit eveniet voluptate eos rerum optio culpa, voluptatibus nobis cupiditate laboriosam cum consequuntur.</p>
-          <p class="read-formatting">READ MORE ></p>
+        <%= link_to blog_path(@blogs[0], anchor:"blog-#{@blogs[0].id}") do %>
+          <% if @blogs[0].photos.attached? %>
+            <%= cl_image_tag(@blogs[0].photos.first.key, class:"blog-photo") %>
+          <% else %>
+            <%= cl_image_tag("priya-blog-default.jpg", class:"blog-photo") %>
+          <% end %>
+          <div class="blog-prof-info">
+            <h3><%= @blogs[0].title.upcase %></h3>
+        <% end %>
+            <p class="blog-para-formatting">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias inventore minima quisquam repellendus ipsa quo quae quasi reprehenderit eveniet voluptate eos rerum optio culpa, voluptatibus nobis cupiditate laboriosam cum consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quam laboriosam! Quae, dolor. Architecto nostrum iure odit laborum culpa ipsum modi nemo vitae dolores ipsa veritatis magni, est beatae cum!</p>
+
+          <%= link_to "READ MORE >", blog_path(@blogs[0], anchor:"blog-#{@blogs[0].id}") , class:"read-formatting" %>
         </div>
       </div>
 
