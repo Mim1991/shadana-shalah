@@ -1,10 +1,18 @@
+<div class="navbar-logo">
+  <%= link_to "SADHANA SHALA", root_path, id:"navbar-logo" %>
+</div>
+
+<div class="navbar-links">
   <%= link_to "ABOUT", about_path, class:"active" %>
   <%= link_to "BLOG", blogs_path %>
   <%= link_to "CLASSES", yoga_classes_path %>
-<% if user_signed_in? %>
-  <%= link_to "YOUR ACCOUNT", profile_path %>
-<% else %>
-  <%= link_to "LOG IN", new_user_session_path %>
-  <%= link_to "SIGN UP", new_user_registration_path %>
-<% end %>
+  <% if user_signed_in? %>
+    <%= link_to "PROFILE", profile_path, id:"navbar-profile" %>
+  <% else %>
+    <%= link_to "LOG IN", new_user_session_path %>
+    <%= link_to "SIGN UP", new_user_registration_path %>
+  <% end %>
+</div>
+
+
   
