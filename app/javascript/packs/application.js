@@ -25,12 +25,14 @@ import "bootstrap";
 import { initSocialIcons } from "../components/footer";
 import { initNavbar } from "../components/navbar";
 import { revealBlog } from "../pages/home";
+import { revealCards } from "../pages/home";
 
 document.addEventListener("turbolinks:load", () => {
   // initProfilePic();
   initSocialIcons();
   initNavbar();
   revealBlog();
+  revealCards();
 });
 
 require("trix");
