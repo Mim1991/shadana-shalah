@@ -24,12 +24,14 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import { initSocialIcons } from "../components/footer";
 import { initNavbar } from "../components/navbar";
+import { revealBlog } from "../pages/home";
 
 document.addEventListener("turbolinks:load", () => {
   // initProfilePic();
   initSocialIcons();
   initNavbar();
+  revealBlog();
 });
 
-require("trix")
-require("@rails/actiontext")
+require("trix");
+require("@rails/actiontext");

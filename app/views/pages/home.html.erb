@@ -218,7 +218,7 @@
 
     <div class="blog-prof-hlt">
       
-      <div class="blog-prof-one">
+      <div class="blog-prof-one reveal-blog-one">
         <%= link_to blog_path(@blogs[2], anchor:"blog-#{@blogs[2].id}") do %>
           <% if @blogs[2].photos.attached? %>
             <%= cl_image_tag(@blogs[2].photos.first.key, class:"blog-photo") %>
@@ -234,7 +234,7 @@
         </div>
       </div>
       
-      <div class="blog-prof-two">
+      <div class="blog-prof-two reveal-blog-two">
         <%= link_to blog_path(@blogs[1], anchor:"blog-#{@blogs[1].id}") do %>
           <% if @blogs[2].photos.attached? %>
             <%= cl_image_tag(@blogs[1].photos.first.key, class:"blog-photo") %>
@@ -250,7 +250,7 @@
         </div>
       </div>
 
-      <div class="blog-prof-three">
+      <div class="blog-prof-three reveal-blog-three">
         <%= link_to blog_path(@blogs[0], anchor:"blog-#{@blogs[0].id}") do %>
           <% if @blogs[0].photos.attached? %>
             <%= cl_image_tag(@blogs[0].photos.first.key, class:"blog-photo") %>
