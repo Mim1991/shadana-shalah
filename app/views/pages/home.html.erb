@@ -4,10 +4,6 @@
     <div class="navbar-positioning navbar-items" >
       <%= render 'shared/navbar' %>
     </div>
-  
-  
-
-  
 
   <div class="banner">
   </div>
@@ -232,7 +228,7 @@
           <div class="blog-prof-info">
             <h3><%= @blogs[2].title.upcase %></h3>
         <% end %>
-            <p class="blog-para-formatting"><%= @blogs[2].rich_body %></p>
+            <p class="blog-para-formatting"><%= @blogs[2].synopsis %></p>
 
           <%= link_to "READ MORE >", blog_path(@blogs[2], anchor:"blog-#{@blogs[2].id}") , class:"read-formatting" %>
         </div>
@@ -248,7 +244,7 @@
           <div class="blog-prof-info">
             <h3><%= @blogs[1].title.upcase %></h3>
         <% end %>
-            <p class="blog-para-formatting">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias inventore minima quisquam repellendus ipsa quo quae quasi reprehenderit eveniet voluptate eos rerum optio culpa, voluptatibus nobis cupiditate laboriosam cum consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quam laboriosam! Quae, dolor. Architecto nostrum iure odit laborum culpa ipsum modi nemo vitae dolores ipsa veritatis magni, est beatae cum!</p>
+            <p class="blog-para-formatting"><%= @blogs[1].synopsis %></p>
 
           <%= link_to "READ MORE >", blog_path(@blogs[1], anchor:"blog-#{@blogs[1].id}") , class:"read-formatting" %>
         </div>
@@ -264,7 +260,7 @@
           <div class="blog-prof-info">
             <h3><%= @blogs[0].title.upcase %></h3>
         <% end %>
-            <p class="blog-para-formatting">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias inventore minima quisquam repellendus ipsa quo quae quasi reprehenderit eveniet voluptate eos rerum optio culpa, voluptatibus nobis cupiditate laboriosam cum consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quam laboriosam! Quae, dolor. Architecto nostrum iure odit laborum culpa ipsum modi nemo vitae dolores ipsa veritatis magni, est beatae cum!</p>
+            <p class="blog-para-formatting"><%= @blogs[0].synopsis %></p>
 
           <%= link_to "READ MORE >", blog_path(@blogs[0], anchor:"blog-#{@blogs[0].id}") , class:"read-formatting" %>
         </div>
