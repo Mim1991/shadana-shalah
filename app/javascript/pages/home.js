@@ -1,29 +1,29 @@
 const slideUp = {
-  distance: "150%",
+  distance: "30%",
   origin: "bottom",
   opactity: 0,
-  // reset: true,
-  duration: 700,
+  reset: true,
+  duration: 900,
   easing: "ease-out",
 };
 
 const slideFromLeft = {
-  distance: "110%",
+  distance: "10%",
   origin: "left",
   opactity: 0,
   // delay: 50,
   reset: true,
-  duration: 700,
+  duration: 900,
   easing: "ease-out",
 };
 
 const slideFromRight = {
-  distance: "110%",
+  distance: "10%",
   origin: "right",
   opactity: 0,
   delay: 30,
   reset: true,
-  duration: 700,
+  duration: 900,
   easing: "ease-out",
 };
 
